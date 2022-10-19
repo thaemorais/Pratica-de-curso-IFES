@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <title>Principal</title>
+
+    <style>
+        body{
+            background-color: #F0E2BB;
+            margin: 0px;
+        }
+        nav {
+            background-image: linear-gradient( #333333, #F0E2BB);
+        }
+        thead tr td img {
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+        thead tr td h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-bottom: -10px;
+        }
+        thead tr td p {
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+        .menu td a {
+            text-decoration: none;
+            color: #333333;
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+            display: inline-block;
+            margin-inline: 30px;
+            padding: 5px 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .menu td .destaque {
+            color: #F0E2BB;
+            background-color: #333333;
+            border-radius: 10px;
+        }
+        .bloco1{
+            background-color: #333333;
+            border-radius: 20px;
+            width: 500px;
+        }
+        .bloco1 h3{
+            color:white;
+            font-family: 'Caveat', cursive;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        .bloco1 h1{
+            color: orange;
+            font-family:'Open Sans', sans-serif;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        .bloco1 h2{
+            color:white;
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        .bloco1 button{
+            color: white;
+            background-color: blue;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 10px;
+            font-family:'Open Sans', sans-serif;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .bloco2 img{
+            border-radius: 10px;
+            width: 500px;
+        }
+        .menu2 h3{
+            color: #333333;
+            font-family:'Open Sans', sans-serif;
+            font-size: 18px;
+        }
+        .menu2 a{
+            text-decoration: none;
+            color: #333333;
+            font-family:'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu2 p{
+            color: #333333;
+            font-family:'Open Sans', sans-serif;
+            font-size: 18px;
+        }
+        footer{
+            background-color: white;
+            padding-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <table align="center" width="80%">
+            <thead>
+                <!--CABECALHO-->
+                <tr>
+                    <td rowspan="2" align="right">
+                        <img src="img\perfil thae.jpg" alt="Foto de perfil" width="100">
+                    </td>
+                    <td>
+                        <h1>Thaelen de Morais Lima</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&lt;Designer e Desenvolvedor Web&gt;</p>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </nav>
+    <table align="center" width="80%">
+        <tbody>
+            <tr class="menu"> <!-- LINKS -->
+                <td colspan="2" align="center">
+                    <a href="index.html" class="destaque">Principal</a>
+                    <a href="quemsou.html">Quem Sou</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html">Contato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="bloco1"> <!-- BLOCO 1 -->
+                    <h3>Olá! Eu sou</h3>
+                    <h1>Thaelen de Morais Lima</h1>
+                    <h2>Eu crio aplicações web <br> modernas e atraentes.</h2>
+                    <button>Contate-me!</button>
+                </td>
+                <td align="right" class="bloco2"> <!-- BLOCO 2 -->
+                    <img src="img\html.jpg" alt="Pessoa">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="80%">
+        <tbody class="menu2">
+            <tr>
+                <td colspan="2" align="left">
+                    <h3>O que você vai encontrar aqui:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="index.html">Principal</a>
+                </td>
+                <td>
+                    <p>Esta página que você se encontra, contendo um resumo de todo o site.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="quemsou.html">Quem sou</a>
+                </td>
+                <td>
+                    <p>Uma minibio da minha vida profissional com um resumo de minhas habilidades.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="projetos.html">Projetos</a>
+                </td>
+                <td>
+                    <p>Os trabalhos mais relevantes em que atuei como desenvolvedora web.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="contato.html">Contato</a>
+                </td>
+                <td>
+                    <p>Os canais para você me encontrar em redes sociais, e-mail e telefone</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <footer>
+
+        <table align="center" class="footer">
+            <tfoot>
+                <tr>
+                    <td align="center">
+                        <p>Copyright © 2022</p>
+                        <img src="img\ifes.png" alt="Logo Ifes" width="100">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </footer>
+</body>
+
+</html>

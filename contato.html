@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <title>Contato</title>
+
+    <style>
+        body {
+            background-color: #F0E2BB;
+            margin: 0px;
+        }
+        nav {
+            background-image: linear-gradient( #333333, #F0E2BB);
+        }
+        thead tr td img {
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        thead tr td h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-bottom: -10px;
+        }
+
+        thead tr td p {
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .menu td a {
+            text-decoration: none;
+            color: #333333;
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+            display: inline-block;
+            margin-inline: 30px;
+            padding: 5px 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .menu td .destaque {
+            color: #F0E2BB;
+            background-color: #333333;
+            border-radius: 10px;
+        }
+
+        .body1 , .body2 , .body3{
+            color:#333333;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .body2 input{
+            border-radius: 5px;
+            height: 17px;
+        }
+        .body2 textarea, select{
+            border-radius: 5px;
+            width: 310px;
+        }
+        #linha{
+            width: 80%;
+        }
+        .body3 a{
+            text-decoration: none;
+            color: #333333;
+        }
+        .body3 h2{
+            margin-bottom: -10px;
+        }
+        .body3 p{
+            margin-bottom: 0px;
+        }
+        .body2 .button{
+            color: white;
+            background-color: blue;
+            height: 30px;
+            width: 70px;
+        }
+        footer{
+            background-color: white;
+            padding-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+            
+<body>
+    <nav>
+        <table align="center" width="80%">
+            <thead>
+                <!--CABECALHO-->
+                <tr>
+                    <td rowspan="2" align="right">
+                        <img src="img\perfil thae.jpg" alt="Foto de perfil" width="100">
+                    </td>
+                    <td>
+                        <h1>Thaelen de Morais Lima</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&lt;Designer e Desenvolvedor Web&gt;</p>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </nav>
+    <table align="center" width="80%">
+        <tbody>
+            <tr class="menu">
+                <!-- LINKS -->
+                <td colspan="2" align="center">
+                    <a href="index.html">Principal</a>
+                    <a href="quemsou.html">Quem Sou</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html" class="destaque">Contato</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="80%" align="center" class="body1">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <h1>Entre em contato!</h1>
+                    <p>Preencha dos campos do formulario a seguir e em ate 48h lhe responderei. <br>Sera um prazer lhe atender!</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="">
+        <table align="center" width="80%" class="body2">
+            <tr>
+                <td>
+                    <label for="assunto">Assunto</label><br>
+                    <select name="assunto" id="slctAssunto" placeholder="Selecione o assunto" width="40">
+                        <option value="selecione">Selecione o assunto</option>
+                        <option value="contrate1">Quero contratar voce!</option>
+                        <option value="contrate2">Bora marcar uma entrevista!</option>
+                        <option value="contrate3">Quero voce na minha equipe!</option>
+                        <option value="contrate4">Voce precisa vir pra minha empresa!</option>
+                        <option value="contrate5">Vou te ligar agora, atende ai!</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="txtnome" placeholder="Beltrano de Tal" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="beltrano@email.com" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="celular">Telefone</label><br>
+                    <input type="tel" pattern="[1-9]{2} [1-9]{5}-[1-9]{4}" placeholder="(27) 99999-9999" name="celular" id="telcelular" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" id="txtmensagem" cols="30" rows="10" size="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar" class="button">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr id="linha">
+    <table align="center" width="80%" class="body3">
+        <tr>
+            <td>
+                <h2>Outras formas de contato:</h2>
+                <p>Residente em São Mateus/ES</p>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=DmwnWrRpdLlWCcbmlpjxHqfZxDSpFscxnzHNjPKBKjPvtkJVTCkBGkQqVSJnpvctnCjQlSXdbwMq">thaelenml15@gmail.com</a><br>
+                <a href="https://api.whatsapp.com/send?phone=5527996438524&text=Oii%2C%20quero%20te%20dar%20um%20emprego!">(27) 99643-8524</a><br>
+                <a href="https://www.linkedin.com/in/thaelen/">LinkedIn</a><br>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <footer>
+        <table align="center" class="footer" width="100%">
+            <tfoot>
+                <tr>
+                    <td align="center">
+                        <p>Copyright © 2022</p>
+                        <img src="img\ifes.png" alt="Logo Ifes" width="100">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </footer>
+    </body>
+    
+    </html>
